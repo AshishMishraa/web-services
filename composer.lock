@@ -7,11 +7,11 @@
     "hash": "9729def219f045ef2230ae8bd8cd2f83",
     "content-hash": "b49905b343b19b5b1126c2d6d043059f",
     "packages": [
-        {
+        {zxz  
             "name": "cartalyst/sentry",
             "version": "dev-master",
             "source": {
-                "type": "git",
+                "type": "git" ccx,
                 "url": "https://github.com/cartalyst/sentry.git",
                 "reference": "d4a35683c3d08d84cbcfac61783e14b5e8a144ec"
             },
