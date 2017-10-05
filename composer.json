@@ -1,0 +1,54 @@
+{
+    "name": "rizkiarm/slim-starter-x",
+    "description": "Slim Framework in MVC environment with Eloquent as database provider, Twig as template engine and Phinx as a migration utility",
+    "keywords": ["framework", "slim", "mvc", "eloquent", "twig", "slim-starter", "slim-starter-x", "phinx"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Rizki A.R.M",
+            "email": "rizki@rizkiarm.com",
+            "homepage":"http://github.com/rizkiarm",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">= 5.3.0",
+        "slim/slim": "2.4.*",
+        "slim/views":"0.1.2",
+        "twig/twig": "1.*",
+        "twig/extensions": "*",
+        "itsgoingd/slim-facades": "dev-master",
+        "illuminate/database" : "4.*",
+        "illuminate/validation": "4.*",
+        "illuminate/translation": "4.*",
+        "cartalyst/sentry" : "2.*",
+        "ircmaxell/password-compat": "1.0.*",
+        "robmorgan/phinx": "0.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : [
+                "src/",
+                "app/controllers/",
+                "app/models/",
+                "app/middlewares/",
+                "app/modules/"
+            ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "chmod -R 777 app/storage"
+        ],
+        "post-update-cmd": [
+            "rm -rf app/storage/cache/*"
+        ],
+        "post-create-project-cmd": [
+            "chmod -R 777 app/storage"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+}
